@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_large"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+                <ImageView
+                    android:layout_gravity="center"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_comment_black_24dp"
+                    app:tint="@color/grey_80"
+                    android:layout_marginRight="@dimen/spacing_middle"
+
+                    >
+
+                </ImageView>
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:id="@+id/name"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:gravity="center_vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="name"
+                    app:fontFamily="serif"
+                    />
+
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/grey_40"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="post Id"
+                    android:visibility="gone"
+                    app:fontFamily="serif" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/email"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/blue_400"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/spacing_small"
+                android:text="email"
+                android:lineSpacingExtra="@dimen/spacing_small"
+                app:fontFamily="serif" />
+
+
+            <TextView
+                android:id="@+id/body"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/grey_60"
+                android:gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:text="body" android:lineSpacingExtra="@dimen/spacing_small"
+                app:fontFamily="serif" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Z</string>
+    <string name="str_recycled">Deleted</string>
+    <string name="undo_string">Undo</string>
+</resources>
